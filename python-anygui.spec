@@ -4,7 +4,7 @@ Summary:	Generic GUI Package for Python
 Summary(pl):	Pakiet GUI dla Pythona
 Name:		python-%{module}
 Version:	0.1.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/anygui/%{module}-%{version}.tar.gz
@@ -42,8 +42,9 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 python setup.py install \
         --root=$RPM_BUILD_ROOT
 
-%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
-%py_comp $RPM_BUILD_ROOT%{py_sitedir}
+%py_ocomp $RPM_BUILD_ROOT%{py_sitescriptdir}
+%py_comp $RPM_BUILD_ROOT%{py_sitescriptdir}
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -name "*.py" | xargs rm
 
 mv demo/*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
@@ -54,9 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGE* KNOWN* MAINT* TODO* doc/*.txt
 %{_examplesdir}/%{name}-%{version}
-%dir %{py_sitedir}/%{module}
-%{py_sitedir}/%{module}/*.py[co]
-%dir %{py_sitedir}/%{module}/backends
-%{py_sitedir}/%{module}/backends/*.py[co]
-%dir %{py_sitedir}/%{module}/backends/txtutils
-%{py_sitedir}/%{module}/backends/txtutils/*.py[co]
+%dir %{py_sitescriptdir}/%{module}
+%{py_sitescriptdir}/%{module}/*.py[co]
+%dir %{py_sitescriptdir}/%{module}/backends
+%{py_sitescriptdir}/%{module}/backends/*.py[co]
+%dir %{py_sitescriptdir}/%{module}/backends/txtutils
+%{py_sitescriptdir}/%{module}/backends/txtutils/*.py[co]
