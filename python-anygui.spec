@@ -7,18 +7,6 @@ Version:	0.1
 Release:	1
 License:	MIT
 Group:		Development/Languages/Python
-Group(cs):	Vývojové prostøedky/Programovací jazyky/Python
-Group(da):	Udvikling/Sprog/Python
-Group(de):	Entwicklung/Sprachen/Python
-Group(es):	Desarrollo/Lenguajes/Python
-Group(fr):	Development/Langues/Python
-Group(it):	Sviluppo/Linguaggi/Python
-Group(ja):	³«È¯/¸À¸ì/Python
-Group(no):	Utvikling/Programmeringsspråk/Python
-Group(pl):	Programowanie/Jêzyki/Python
-Group(pt):	Desenvolvimento/Linguagens/Python
-Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Python
-Group(sv):	Utveckling/Språk/Python
 Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
