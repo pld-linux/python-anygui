@@ -15,6 +15,7 @@ Group(pt):	Desenvolvimento/Línguas/Python
 Source0:	http://prdownloads.sourceforge.net/anygui/anygui-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
+BuildRequires:	python-module >= 2.2
 BuildRequires:	rpm-pythonprov
 %requires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
