@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 %define		module	anygui
 Summary:	Generic GUI Package for Python
 Summary(pl):	Pakiet GUI dla Pythona
