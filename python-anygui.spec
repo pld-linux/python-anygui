@@ -4,7 +4,7 @@ Summary:	Generic GUI Package for Python
 Summary(pl):	Pakiet GUI dla Pythona
 Name:		python-%{module}
 Version:	0.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
@@ -46,14 +46,12 @@ python setup.py install \
 
 mv demo/*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf CHANGE* KNOWN* MAINT* TODO* doc/*.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz
+%doc CHANGE* KNOWN* MAINT* TODO* doc/*.txt
 %{_examplesdir}/%{name}-%{version}
 %dir %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}/*.py[co]
