@@ -12,10 +12,10 @@ Group(es):	Desarrollo/Lenguages/Python
 Group(fr):	Development/Langues/Python
 Group(pl):	Programowanie/Jêzyki/Python
 Group(pt):	Desenvolvimento/Línguas/Python
-Source0:	http://prdownloads.sourceforge.net/anygui/anygui-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
-BuildRequires:	python-module >= 2.2
+BuildRequires:	python-modules >= 2.2
 BuildRequires:	rpm-pythonprov
 %requires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
