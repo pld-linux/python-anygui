@@ -4,9 +4,9 @@ Summary:	Generic GUI Package for Python
 Summary(pl):	Pakiet GUI dla Pythona
 Name:		python-%{module}
 Version:	0.1
-Release:	1
+Release:	2
 License:	MIT
-Group:		Development/Languages/Python
+Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
