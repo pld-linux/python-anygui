@@ -10,7 +10,6 @@ Source0:	http://dl.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 # Source0-md5:	fd628ef008ef3139aae85a3d954e4653
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
-BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
