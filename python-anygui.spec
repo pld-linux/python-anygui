@@ -11,7 +11,7 @@ Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
-%requires_eq	python-modules
+%pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	%{module}
