@@ -15,8 +15,7 @@ Group(pt):	Desenvolvimento/Línguas/Python
 Source0:	http://prdownloads.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
-BuildRequires:	python-modules >= 2.2
-BuildRequires:	rpm-pythonprov
+BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %requires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,7 +37,6 @@ platformach.
 %setup -q -n %{module}-%{version}
 
 %build
-CFLAGS="%{rpmcflags}"; export CFLAGS
 python setup.py build
 
 %install
