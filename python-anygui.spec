@@ -7,7 +7,7 @@ Version:	0.1.1
 Release:	1
 License:	MIT
 Group:		Libraries/Python
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/anygui/%{module}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 URL:		http://www.anygui.org/
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
