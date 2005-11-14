@@ -24,7 +24,7 @@ packages on most platforms.
 %description -l pl
 Celem Anygui jest stworzenie prostego w u¿yciu, standardowego modu³u
 do tworzenia interfejsu u¿ytkownika w Pythonie. G³ówn± zalet± Anygui
-jest to, ¿e dzia³a on prze¼roczy¶cie z wieloma innymi GUI na ró¿nych
+jest to, ¿e dzia³a on przezroczy¶cie z wieloma innymi GUI na ró¿nych
 platformach.
 
 %prep
