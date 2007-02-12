@@ -1,6 +1,6 @@
 %define		module	anygui
 Summary:	Generic GUI Package for Python
-Summary(pl):	Pakiet GUI dla Pythona
+Summary(pl.UTF-8):   Pakiet GUI dla Pythona
 Name:		python-%{module}
 Version:	0.1.1
 Release:	4
@@ -21,10 +21,10 @@ and generic module for making graphical user interfaces in Python. Its
 main feature is that it works transparently with many different GUI
 packages on most platforms.
 
-%description -l pl
-Celem Anygui jest stworzenie prostego w uøyciu, standardowego modu≥u
-do tworzenia interfejsu uøytkownika w Pythonie. G≥Ûwn± zalet± Anygui
-jest to, øe dzia≥a on przezroczy∂cie z wieloma innymi GUI na rÛønych
+%description -l pl.UTF-8
+Celem Anygui jest stworzenie prostego w u≈ºyciu, standardowego modu≈Çu
+do tworzenia interfejsu u≈ºytkownika w Pythonie. G≈Ç√≥wnƒÖ zaletƒÖ Anygui
+jest to, ≈ºe dzia≈Ça on przezroczy≈õcie z wieloma innymi GUI na r√≥≈ºnych
 platformach.
 
 %prep
