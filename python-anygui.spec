@@ -1,6 +1,6 @@
 %define		module	anygui
 Summary:	Generic GUI Package for Python
-Summary(pl.UTF-8):   Pakiet GUI dla Pythona
+Summary(pl.UTF-8):	Pakiet GUI dla Pythona
 Name:		python-%{module}
 Version:	0.1.1
 Release:	4
