@@ -9,7 +9,8 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 # Source0-md5:	fd628ef008ef3139aae85a3d954e4653
 URL:		http://www.anygui.org/
-BuildRequires:	python-devel >= 2.2
+BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -59,3 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitescriptdir}/%{module}/backends/*.py[co]
 %dir %{py_sitescriptdir}/%{module}/backends/txtutils
 %{py_sitescriptdir}/%{module}/backends/txtutils/*.py[co]
+%{py_sitescriptdir}/%{module}*.egg-info
