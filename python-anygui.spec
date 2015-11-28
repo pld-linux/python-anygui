@@ -32,14 +32,13 @@ platformach.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-python setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_ocomp $RPM_BUILD_ROOT%{py_sitescriptdir}
 %py_comp $RPM_BUILD_ROOT%{py_sitescriptdir}
