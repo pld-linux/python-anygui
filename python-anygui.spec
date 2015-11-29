@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/anygui/%{module}-%{version}.tar.gz
 # Source0-md5:	fd628ef008ef3139aae85a3d954e4653
 URL:		http://www.anygui.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
